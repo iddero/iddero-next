@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iddero HC3-KNX</title>
+        <link href="/favicon.ico" rel="icon" type="image/ico" />
+        <link href="/css/bootstrap.css" rel="stylesheet" />
+        <link href="/css/stack-interface.css" rel="stylesheet" />
+        <link href="/css/socicon.css" rel="stylesheet" />
+        <link href="/css/lightbox.min.css" rel="stylesheet" />
+        <link href="/css/flickity.css" rel="stylesheet" />
+        <link href="/css/theme.css" rel="stylesheet" />
+        <link href="/css/custom.css" rel="stylesheet" />
+        <link href="/css/font-roboto.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/util.js"></script>
+    </head>
+    <body class="">
+        <a id="start"></a>
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                            <a href="/es/">
+                                <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#navmenu;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="navmenu" class="bar bar--sm bar-1 hidden-xs bar--transparent bar--absolute" data-scroll-class='10vh:pos-fixed'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="/es/">
+                                    <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                    <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-lg-11 col-md-10 text-right">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal">
+    <li><a href="/es/">Inicio</a></li>
+    <li><a href="/es/products">Productos</a></li> 
+    <li><a href="/es/download">Descargas</a></li> 
+    <li><a href="/es/references">Referencias</a></li> 
+    <li><a href="/es/contact">Contacto</a></li>
+    <li class="dropdown dropdown--absolute hidden-xs">
+        <span class="dropdown__trigger">
+            <img alt="es" class="flag" src="/img/es.png">
+        </span>
+        <div class="dropdown__container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 dropdown__content">
+                        <ul id="menu-lang" class="menu-vertical text-left">
+                                <li><a data-lang="en" href="/en/products/hc3-knx"><img alt="en" class="flag" src="/img/en.png"> English</a></li>
+                                <li><a data-lang="de" href="/de/products/hc3-knx"><img alt="de" class="flag" src="/img/de.png"> Deutsch</a></li>
+                                <li><a data-lang="fr" href="/fr/products/hc3-knx"><img alt="fr" class="flag" src="/img/fr.png"> Français</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="visible-xs">
+        <form class="form-inline">
+            <div class="input-select">
+                <select id="select-lang">
+                        <option data-lang="en"  value="/en/products/hc3-knx">English</option>
+                        <option data-lang="es" selected value="/es/products/hc3-knx">Español</option>
+                        <option data-lang="de"  value="/de/products/hc3-knx">Deutsch</option>
+                        <option data-lang="fr"  value="/fr/products/hc3-knx">Français</option>
+                </select>
+            </div>
+        </form>
+    </li>
+    <script>
+        $('#menu-lang a').click(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+        })
+        $('#select-lang').change(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+            // URL stored in option value
+            window.location.href = this.value;
+        });
+    </script>
+</ul>
+
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+            <section class="text-center space--sm bg--dark black">
+    <div class="container" style="padding-top: 4.95em;">
+        <div class="row">
+            <div class="col-md-10 col-lg-8">
+                <h1><img alt="Logo HC3-KNX" src="/img/products/logo-hc3-white.png"></h1>
+                <h2>
+                    Pantalla táctil capacitiva de 7” con conexión IP y función videoportero
+                </h2>
+                <p class="h2 product-claim">
+                    puedes tenerlo todo
+                </p>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+<section class="text-center bg--dark black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img alt="HC3-KNX" src="/img/products/montaje-cover-hc3.jpg">
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+<section class="text-center bg--dark black">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <h2>Solución completa de visualización y control</h2>
+<p>Las pantallas táctiles Iddero HC3-KNX, disponibles en múltiples acabados, se instalan empotradas en pared y proporcionan una visualización amigable e intuitiva para el control de la instalación KNX, así como una completísima funcionalidad.</p>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+
+<section class="text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <h2>Amplia funcionalidad</h2>
+<p>Programaciones horarias, escenas editables directamente por el usuario
+final, monitorización de alarmas, simulación de presencia, notificaciones,
+funciones lógicas y aritméticas, termostatos integrados, cuatro entradas
+multifunción, reloj con batería de soporte, conexión directa al bus KNX...</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img alt="screenshots" src="/img/products/hcx-screenshots.jpg">
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+
+<section class="switchable switchable--switch space--xs">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-5 col-md-6 slider-side-text">
+                <h2>Visualización atractiva</h2>
+<p>Una visualización amigable e intuitiva, con un cuidado interfaz de
+usuario. Posibilidad de definir hasta 512 páginas. Navegación gráfica
+a través de planos, amplia variedad de controles, imágenes de fondo
+configurables, reconocimiento de gestos táctiles y mucho más.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">                             
+                <div class="slider" data-paging="true">
+                    <ul class="slides">
+                        <li><img alt="screenshot" src="/img/products/hc3-visu_01.jpg"></li>
+                        <li><img alt="screenshot" src="/img/products/hc3-visu_02.jpg"></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="switchable switchable--switch imagebg height-50 parallax" data-overlay="2">
+    <div class="background-image-holder">
+        <img alt="background" src="/img/products/bg2-hc3-remoto.jpg">
+    </div>
+    <div class="container pos-vertical-center">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Acceso remoto</h2>
+<p>Servidor web integrado para acceso remoto desde smartphone,
+tablet o navegadores de escritorio. Compatible con el servicio
+<a href="idderocloud">idderocloud</a>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="switchable feature-large space--xs">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-6"> <img alt="Image" class="" src="/img/products/laptop-software-configuracion.jpg"> </div>
+            <div class="col-md-6 col-lg-5">
+                <div class="switchable__text">
+                    <h2>Configuración fácil e intuitiva</h2>
+<p>Crea tus proyectos en cuestión de minutos con el software de
+configuración <a href="iddero-config">iddero-config</a>, incluso sin
+acceso físico al dispositivo. Programación ultra-rápida a través de IP.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>			
+
+<section class="switchable feature-large imagebg space--xs image--light switchable--switch" data-overlay="5">
+    <div class="background-image-holder">
+        <img alt="background" src="/img/products/bg-pared-piedra.jpg">
+    </div>
+    <div class="container">
+        <div class="row align-items-center justify-content-around">
+            <div class="col-lg-6 col-md-6">
+                <div class="switchable__text">
+                    <h2>Videoportería y visualización de cámaras IP</h2>
+<p>Recibe las llamadas del videoportero en pantalla y disfruta de la mejor
+calidad de video y del audio full duplex con cancelación de eco acústico.
+Compatible con los principales fabricantes de videoporteros IP del
+mercado<sup>(*)</sup>, así como con videoporteros SIP genéricos.</p>
+<div class="note">(*) Incluye MURA IP, Mobotix, 2N Helios IP, TCS, Adatis, Baudisch, Behnke, Robin Telecom, etc.</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-12 text-center">
+                <img alt="Image" src="/img/products/hc3-grey-persp.png">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col">
+                <div class="slider slider--inline-arrows slider--arrows-hover text-center" data-arrows="true">
+                    <ul class="slides">
+                        <li class="col-md-3 col-6"><img alt="Guinaz" src="/img/products/logo-guinaz.png"></li>
+                        <li class="col-md-3 col-6"><img alt="2N" src="/img/products/logo-2n.png"></li>
+                        <li class="col-md-3 col-6"><img alt="Mobotix" src="/img/products/logo-mobotix.png"></li>
+                        <li class="col-md-3 col-6"><img alt="TCS" src="/img/products/logo-tcs.png"></li>
+                        <li class="col-md-3 col-6"><img alt="MURA" src="/img/products/logo-mura.png"></li>
+                        <li class="col-md-3 col-6"><img alt="Behnke" src="/img/products/logo-behnke.png"></li>
+                        <li class="col-md-3 col-6"><img alt="Comelit" src="/img/products/logo-comelit.png"></li>
+                        <li class="col-md-3 col-6"><img alt="Baudisch" src="/img/products/logo-baudisch.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-center bg--secondary space--xs">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <h2>Acabados disponibles</h2>
+
+                <div class="tabs-container">
+                    <ul class="tabs">
+                        <li class="active">
+                            <div class="tab__title text-center">
+                                <img alt="" src="/img/products/icono_acabado_negro_glass.png" style="margin-bottom:0.8em">
+                                <span class="h5">GLASS negro</span>
+                            </div>
+                            <div class="tab__content text-center">
+                                <div class="col-md-12">
+                                    <img alt="HC3-KNX-GB" src="/img/products/hc3-black-glass-front.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tab__title text-center">
+                                <img alt="" src="/img/products/icono_acabado_blanco_glass.png" style="margin-bottom:0.8em">
+                                <span class="h5">GLASS blanco</span>
+                            </div>
+                            <div class="tab__content text-center">
+                                <div class="col-md-12">
+                                    <img alt="HC3-KNX-GW" src="/img/products/hc3-white-glass-front.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tab__title text-center">
+                                <img alt="" src="/img/products/icono_acabado_negro_classic.png" style="margin-bottom:0.8em">
+                                <span class="h5">CLASSIC negro</span>
+                            </div>
+                            <div class="tab__content text-center">
+                                <div class="col-md-12">
+                                    <img alt="HC3-KNX-CB" src="/img/products/hc3-black-classic-front.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tab__title text-center">
+                                <img alt="" src="/img/products/icono_acabado_blanco_classic.png" style="margin-bottom:0.8em">
+                                <span class="h5">CLASSIC blanco</span>
+                            </div>
+                            <div class="tab__content text-center">
+                                <div class="col-md-12">
+                                    <img alt="HC3-KNX-CW" src="/img/products/hc3-white-classic-front.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tab__title text-center">
+                                <img alt="" src="/img/products/icono_acabado_gris_classic.png" style="margin-bottom:0.8em">
+                                <span class="h5">CLASSIC gris</span>
+                            </div>
+                            <div class="tab__content text-center">
+                                <div class="col-md-12">
+                                    <img alt="HC3-KNX-CG" src="/img/products/hc3-grey-classic-front.png">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+<section class="text-center space--xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Descargas</h2>
+
+                <table class="table table-borderless downloads-table">
+                    <tbody>
+                            <tr class="category">
+                                <td colspan=4><hr>Documentación técnica</td>
+                            </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/HC3-KNX_Datasheet_es.pdf">Hoja técnica HC3-KNX</a></td>
+                                        <td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+                                        <td class="download-size">783 KB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/HCx-KNX_Guia_rapida.pdf">Guía rápida HCx-KNX</a></td>
+                                        <td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+                                        <td class="download-size">1.31 MB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/HCx-KNX_Manual.pdf">Manual de usuario HCx-KNX</a></td>
+                                        <td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+                                        <td class="download-size">3.45 MB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                            <tr class="category">
+                                <td colspan=4><hr>Software</td>
+                            </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/hc3-knx-4.2.bin">Firmware update (4.2)</a></td>
+                                        <td class="download-type"><span class="download-icon-bin">bin</span></td>
+                                        <td class="download-size">2.07 MB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/iddero-config-4.2-setup.exe">iddero-config 4.2</a></td>
+                                        <td class="download-type"><span class="download-icon-exe">exe</span></td>
+                                        <td class="download-size">14.73 MB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/Release_notes-4.2.pdf">Release notes (4.2)</a></td>
+                                        <td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+                                        <td class="download-size">113 KB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>
+
+
+
+
+            <footer class="text-center-xs space--xs bg--dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6"> <!-- col-sm-7 -->
+                <div>
+                    <div class="type--fine-print">Copyright &copy; <span class="update-year"></span>. Todos los derechos reservados.</div>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print footer-links">
+                        <li><a href="/es/about">Sobre Iddero</a></li>
+                        <li class="hidden-xs">|</li>
+                        <li><a href="/es/legal">Información legal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print newsletter-link">
+                        <li><span>Newsletter Iddero</span><a class="type--uppercase" href="/es/newsletter">Suscríbete</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline social-list">
+                        <li><a href="https://www.youtube.com/iddero"><i class="socicon socicon-youtube icon icon--xs"></i></a></li>
+                        <li><a href="https://www.twitter.com/iddero"><i class="socicon socicon-twitter icon icon--xs"></i></a></li>
+                        <li><a href="https://www.facebook.com/iddero"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 text-right"> <!-- col-sm-5 text-center-xs -->
+                <ul class="list-inline list-logos">
+                    <li><img src="/img/knx_footer.png" alt="KNX" width="70" height="33"></li>
+                    <li><img src="/img/iso_9001_footer.png" alt="ISO 9001" width="60" height="59"></li>
+                    <li><img src="/img/iso_14001_footer.png" alt="ISO 14001" width="60" height="59"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div> <!-- main-container -->
+        
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>        
+        <script src="/js/parallax.js"></script>
+        <script src="/js/isotope.min.js"></script>
+        <script src="/js/smooth-scroll.min.js"></script>
+                <script src="/js/flickity.min.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>

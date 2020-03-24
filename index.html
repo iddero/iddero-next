@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <title>Iddero</title>
+    <script>
+    (function() {
+        function cookie(name) {
+            var nameEQ = name + '=';
+            var ca = document.cookie.split('; ');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length);
+            }
+            return null;
+        }
+
+        function detect() {
+            try {
+                // window.navigator props from: https://gist.github.com/leipert/9586b796281faa5e27ed
+                var n = window.navigator;
+                var langs = n['languages'];
+                if (!langs) {
+                    var val = n['language'] || n['browserLanguage'] || n['userLanguage'] || n['systemLanguage'] || 'en';
+                    langs = [ val ];
+                }
+
+                for (var i = 0; i < langs.length; i++) {
+                    var lang = langs[i].substring(0, 2);
+                    if ('en|es|de|fr'.indexOf(lang) != -1)
+                        return lang;
+                }
+            }
+            catch (err) {
+                console.error(err);
+            }
+
+            // NOT REACHED
+            return 'en';
+        }
+
+        var lang = cookie('lang') || detect();
+
+        window.location.replace('/' + lang);
+    }) ();
+    </script>    
+</head>
+</html>

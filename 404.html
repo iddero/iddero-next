@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <title>Iddero</title>
+    <script>
+    (function() {
+        function get_cookie(name) {
+            var nameEQ = name + '=';
+            var ca = document.cookie.split('; ');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length);
+            }
+            return null;
+        }
+
+        var lang = get_cookie('lang') || 'en';
+
+        window.location.replace('/' + lang + '/404');
+    }) ();
+    </script>    
+</head>
+</html>

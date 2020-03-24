@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>idderocloud</title>
+        <link href="/favicon.ico" rel="icon" type="image/ico" />
+        <link href="/css/bootstrap.css" rel="stylesheet" />
+        <link href="/css/stack-interface.css" rel="stylesheet" />
+        <link href="/css/socicon.css" rel="stylesheet" />
+        <link href="/css/lightbox.min.css" rel="stylesheet" />
+        <link href="/css/flickity.css" rel="stylesheet" />
+        <link href="/css/theme.css" rel="stylesheet" />
+        <link href="/css/custom.css" rel="stylesheet" />
+        <link href="/css/font-roboto.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/util.js"></script>
+    </head>
+    <body class="">
+        <a id="start"></a>
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                            <a href="/es/">
+                                <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#navmenu;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="navmenu" class="bar bar--sm bar-1 hidden-xs bar--transparent bar--absolute" data-scroll-class='10vh:pos-fixed'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="/es/">
+                                    <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                    <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-lg-11 col-md-10 text-right">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal">
+    <li><a href="/es/">Inicio</a></li>
+    <li><a href="/es/products">Productos</a></li> 
+    <li><a href="/es/download">Descargas</a></li> 
+    <li><a href="/es/references">Referencias</a></li> 
+    <li><a href="/es/contact">Contacto</a></li>
+    <li class="dropdown dropdown--absolute hidden-xs">
+        <span class="dropdown__trigger">
+            <img alt="es" class="flag" src="/img/es.png">
+        </span>
+        <div class="dropdown__container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 dropdown__content">
+                        <ul id="menu-lang" class="menu-vertical text-left">
+                                <li><a data-lang="en" href="/en/products/idderocloud"><img alt="en" class="flag" src="/img/en.png"> English</a></li>
+                                <li><a data-lang="de" href="/de/products/idderocloud"><img alt="de" class="flag" src="/img/de.png"> Deutsch</a></li>
+                                <li><a data-lang="fr" href="/fr/products/idderocloud"><img alt="fr" class="flag" src="/img/fr.png"> Français</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="visible-xs">
+        <form class="form-inline">
+            <div class="input-select">
+                <select id="select-lang">
+                        <option data-lang="en"  value="/en/products/idderocloud">English</option>
+                        <option data-lang="es" selected value="/es/products/idderocloud">Español</option>
+                        <option data-lang="de"  value="/de/products/idderocloud">Deutsch</option>
+                        <option data-lang="fr"  value="/fr/products/idderocloud">Français</option>
+                </select>
+            </div>
+        </form>
+    </li>
+    <script>
+        $('#menu-lang a').click(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+        })
+        $('#select-lang').change(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+            // URL stored in option value
+            window.location.href = this.value;
+        });
+    </script>
+</ul>
+
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+            <section class="cover height-90 imagebg parallax text-center" data-overlay="4" id="home">
+    <div class="background-image-holder">
+        <img alt="background" src="/img/products/bg-cover-idderocloud.jpg">
+    </div>
+    <div class="container pos-vertical-center">
+        <div class="row">
+            <div class="col-md-8">
+                <img alt="idderocloud" src="/img/products/logo-idderocloud-white.png">
+                <h2>Controla tu vivienda desde cualquier lugar</h2>
+                <p>Acceso remoto en cualquier momento y desde cualquier lugar usando tu smartphone,
+tablet o PC. No necesitas una IP fija, ni contratar un servicio de DNS dinámico, ni
+redireccionar puertos, ni modificar la configuración del router.</p>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+<section class="text-center space--xs">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <h2>¡Empieza a usar idderocloud en sólo tres pasos!</h2>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <div class="container" style="padding-top: 3.71428571em;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature"> <img alt="idderocloud-step01" src="/img/products/idderocloud-step01.jpg">                                
+                    <h4>1. Crea tu cuenta</h4>
+<p>Crea tu cuenta en <a href="https://www.idderocloud.com/">idderocloud.com</a>.
+Compatible con iOS, Android y los principales navegadores de PC.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature"> <img alt="idderocloud-step02" src="/img/products/idderocloud-step02.jpg">
+                    <h4>2. Activa el servicio</h4>
+<p>Activa el servicio idderocloud en tu pantalla táctil Iddero o Iddero Home Server.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature"> <img alt="idderocloud-step03" src="/img/products/idderocloud-step03.jpg">
+                    <h4>3. ¡Listo!</h4>
+<p>Ya puedes acceder de forma remota a tu dispositivo Iddero. Comunicaciones encriptadas y 100% seguras.</p>      
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 3.71428571em;">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="note">Se requiere conexión a Internet tanto en la instalación como en
+la ubicación de acceso remoto.<br>
+El servicio se ofrece de forma gratuita. Consultar 
+<a href="../idderocloud-terms">términos y condiciones</a>.
+</div>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>				
+    <!--end of container-->
+</section>
+<hr>
+
+   
+<section class="text-center space--xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Descargas</h2>
+
+                <table class="table table-borderless downloads-table">
+                    <tbody>
+                            <tr class="category">
+                                <td colspan=4><hr>Documentación comercial</td>
+                            </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/idderocloud_A4_es.pdf">Folleto idderocloud</a></td>
+                                        <td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+                                        <td class="download-size">614 KB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>
+
+
+
+
+            <footer class="text-center-xs space--xs bg--dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6"> <!-- col-sm-7 -->
+                <div>
+                    <div class="type--fine-print">Copyright &copy; <span class="update-year"></span>. Todos los derechos reservados.</div>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print footer-links">
+                        <li><a href="/es/about">Sobre Iddero</a></li>
+                        <li class="hidden-xs">|</li>
+                        <li><a href="/es/legal">Información legal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print newsletter-link">
+                        <li><span>Newsletter Iddero</span><a class="type--uppercase" href="/es/newsletter">Suscríbete</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline social-list">
+                        <li><a href="https://www.youtube.com/iddero"><i class="socicon socicon-youtube icon icon--xs"></i></a></li>
+                        <li><a href="https://www.twitter.com/iddero"><i class="socicon socicon-twitter icon icon--xs"></i></a></li>
+                        <li><a href="https://www.facebook.com/iddero"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 text-right"> <!-- col-sm-5 text-center-xs -->
+                <ul class="list-inline list-logos">
+                    <li><img src="/img/knx_footer.png" alt="KNX" width="70" height="33"></li>
+                    <li><img src="/img/iso_9001_footer.png" alt="ISO 9001" width="60" height="59"></li>
+                    <li><img src="/img/iso_14001_footer.png" alt="ISO 14001" width="60" height="59"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div> <!-- main-container -->
+        
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>        
+        <script src="/js/parallax.js"></script>
+        <script src="/js/isotope.min.js"></script>
+        <script src="/js/smooth-scroll.min.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>

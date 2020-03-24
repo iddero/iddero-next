@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Résidence Eolos</title>
+        <link href="/favicon.ico" rel="icon" type="image/ico" />
+        <link href="/css/bootstrap.css" rel="stylesheet" />
+        <link href="/css/stack-interface.css" rel="stylesheet" />
+        <link href="/css/socicon.css" rel="stylesheet" />
+        <link href="/css/lightbox.min.css" rel="stylesheet" />
+        <link href="/css/flickity.css" rel="stylesheet" />
+        <link href="/css/theme.css" rel="stylesheet" />
+        <link href="/css/custom.css" rel="stylesheet" />
+        <link href="/css/font-roboto.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/util.js"></script>
+    </head>
+    <body class="">
+        <a id="start"></a>
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                            <a href="/fr/">
+                                <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#navmenu;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="navmenu" class="bar bar--sm bar-1 hidden-xs bar--transparent bar--absolute" data-scroll-class='10vh:pos-fixed'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="/fr/">
+                                    <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                    <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-lg-11 col-md-10 text-right">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal">
+    <li><a href="/fr/">Accueil</a></li>
+    <li><a href="/fr/products">Produits</a></li> 
+    <li><a href="/fr/download">Téléchargements</a></li> 
+    <li><a href="/fr/references">Références</a></li> 
+    <li><a href="/fr/contact">Contact</a></li>
+    <li class="dropdown dropdown--absolute hidden-xs">
+        <span class="dropdown__trigger">
+            <img alt="fr" class="flag" src="/img/fr.png">
+        </span>
+        <div class="dropdown__container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 dropdown__content">
+                        <ul id="menu-lang" class="menu-vertical text-left">
+                                <li><a data-lang="en" href="/en/references/eolos"><img alt="en" class="flag" src="/img/en.png"> English</a></li>
+                                <li><a data-lang="es" href="/es/references/eolos"><img alt="es" class="flag" src="/img/es.png"> Español</a></li>
+                                <li><a data-lang="de" href="/de/references/eolos"><img alt="de" class="flag" src="/img/de.png"> Deutsch</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="visible-xs">
+        <form class="form-inline">
+            <div class="input-select">
+                <select id="select-lang">
+                        <option data-lang="en"  value="/en/references/eolos">English</option>
+                        <option data-lang="es"  value="/es/references/eolos">Español</option>
+                        <option data-lang="de"  value="/de/references/eolos">Deutsch</option>
+                        <option data-lang="fr" selected value="/fr/references/eolos">Français</option>
+                </select>
+            </div>
+        </form>
+    </li>
+    <script>
+        $('#menu-lang a').click(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+        })
+        $('#select-lang').change(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+            // URL stored in option value
+            window.location.href = this.value;
+        });
+    </script>
+</ul>
+
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+                <section class="unpad">
+        <article>
+            <div class="imagebg text-center parallax height-40" data-overlay="5">
+                <div class="background-image-holder">
+                    <img alt="background" src="/img/references/cover-eolos.jpg">
+                </div>
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="article__title">
+                                <h1>Résidence Eolos</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <div class="article__body">
+                                <p>
+    <i>Ce projet, développé par Pentadom, a remporté le premier prix dans la catégorie «&nbsp;Installations Domotiques&nbsp;» des I Prix Installations d’Efficacité Énergétique 2014, conjointement organisés par <a href="http://www.fenie.es">FENIE</a> (Fédération Nationale des Entreprises d’Installations Électriques et de Télécommunications d’Espagne), <a href="http://www.knx.org/es/">l’Association KNX Espagne</a>, et <a href="http://www.ifema.es/matelec_01/">MATELEC</a>.</i>
+</p>
+<h3>Emplacement et type de projet</h3>
+<p>
+    Maison unifamiliale énergétiquement efficace, située dans une zone privilégiée de la côte méditerranéenne.
+</p>
+<h3>Description</h3>
+<p>
+    Cette maison a été conçue en accordant une attention particulière à <b>l’efficacité énergétique</b>. D’un côté, en utilisant les sources d’énergie renouvelables pour produire la quantité maximale d’énergie d’une façon propre et économique. Et d’un autre côté, en appliquant des mesures pour l’optimisation et la réduction de la consommation électrique.
+</p>
+<ul>
+    <li>
+        <p>59 m<sup>2</sup> des panneaux photovoltaïques ont été installés sur la toiture aussi bien que sous la forme de balustrade dans le balcon principal, en générant un total de plus de 16,5 kW. L’installation est complétée par un aérogénérateur qui permet de bénéficier des fortes rafales de vent, et par trois panneaux solaires pour chauffer l’eau sanitaire (ECS) et la piscine.</p>
+    </li>
+    <li>
+        <p>La technologie LED a été utilisée pour l’éclairage, et tous les systèmes ont été automatisés et mesurés via KNX pour assurer le contrôle le plus efficace. Par exemple, l’éclairage peut être ajusté automatiquement en fonction de la luminosité extérieure&nbsp;; les  persiennes et la climatisation, en fonction des conditions météorologiques&nbsp;; l’arrosage est automatiquement activé à certaines heures,  mais seulement s’il n’a pas plu.</p>
+    </li>
+</ul>
+<p>
+    En somme, l’installation conçue permet <b>d’économiser jusqu’à 70%</b> par rapport à une maison conventionnelle.
+</p>
+<p>
+    Le contrôle et la visualisation de tout le système se font depuis un écran tactile <a href="/fr/products/35-hc2l-knx">Iddero HC2L-KNX</a> de 10,4". L’interface affiche les plans de la maison en 3D, permet de contrôler toutes les variables et fournit des informations sur la consommation, les données météorologiques, l’état des différents éléments, les alarmes techniques, etc. En plus, le <b>serveur web intégré</b> permet le contrôle total du système depuis tout smartphone ou tablette.
+</p>
+<p>
+    L’écran Iddero est également responsable de la logique de contrôle de beaucoup des éléments de l’installation, tels que la détection et la notification automatique par e-mail en cas d’alarmes techniques, la coupure automatique de l’eau en cas de fuites, le contrôle thermostatique de la climatisation aux différents étages de la maison, etc.
+</p>
+<p>
+    Il faut également signaler <b>l’intégration du système de portier vidéo IP</b>, qui permet l’utilisateur d’utiliser l’écran Iddero comme moniteur, tout en fournissant d’autres fonctionnalités intéressantes, telles que la réception par e-mail des photos de la personne qui a sonné à la porte aux cas où il n’y avait personne.
+</p>
+
+
+
+
+                                    <div class="boxed boxed--md boxed--border bg--secondary">
+                                        <div class="text-block">
+                                                <h4>Auteur du projet</h4>
+    <p>
+        Pentadom Edificios Inteligentes<br>
+        <a href="http://pentadom.com">http://pentadom.com</a>
+    </p>
+
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+        </article>
+    </section>
+
+    <section class="bg--secondary">
+        <div class="container">
+                <div class="row text-center justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <h2 style="margin-bottom: 80px;">Galerie d'images</h2>
+        </div>
+    </div>
+    <div class="masonry">
+        <div class="masonry__container row masonry--active">
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/eolos/eolos02.jpg"><img src="/img/references/eolos/eolos02_tn.jpg" alt="Residencia Eolos"></a>
+            </div>            
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/eolos/eolos03.jpg"><img src="/img/references/eolos/eolos03_tn.jpg" alt="Residencia Eolos"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/eolos/eolos04.jpg"><img src="/img/references/eolos/eolos04_tn.jpg" alt="Residencia Eolos"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/eolos/eolos05.jpg"><img src="/img/references/eolos/eolos05_tn.jpg" alt="Residencia Eolos"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/eolos/eolos06.jpg"><img src="/img/references/eolos/eolos06_tn.jpg" alt="Residencia Eolos"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/eolos/eolos07.jpg"><img src="/img/references/eolos/eolos07_tn.jpg" alt="Residencia Eolos"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/eolos/eolos08.jpg"><img src="/img/references/eolos/eolos08_tn.jpg" alt="Residencia Eolos"></a>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+
+    <script src="/js/lightbox.min.js"></script>
+    <script>
+    lightbox.option({
+        'resizeDuration': 100,
+        'imageFadeDuration': 100,
+        'fadeDuration': 100,
+        'albumLabel': 'Résidence Eolos: %1 / %2'
+    })
+    </script>
+
+
+            <footer class="text-center-xs space--xs bg--dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6"> <!-- col-sm-7 -->
+                <div>
+                    <div class="type--fine-print">Copyright &copy; <span class="update-year"></span>. Tous droits réservés.</div>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print footer-links">
+                        <li><a href="/fr/about">Sur Iddero</a></li>
+                        <li class="hidden-xs">|</li>
+                        <li><a href="/fr/legal">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print newsletter-link">
+                        <li><span>Newsletter Iddero</span><a class="type--uppercase" href="/fr/newsletter">Inscrivez-vous</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline social-list">
+                        <li><a href="https://www.youtube.com/iddero"><i class="socicon socicon-youtube icon icon--xs"></i></a></li>
+                        <li><a href="https://www.twitter.com/iddero"><i class="socicon socicon-twitter icon icon--xs"></i></a></li>
+                        <li><a href="https://www.facebook.com/iddero"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 text-right"> <!-- col-sm-5 text-center-xs -->
+                <ul class="list-inline list-logos">
+                    <li><img src="/img/knx_footer.png" alt="KNX" width="70" height="33"></li>
+                    <li><img src="/img/iso_9001_footer.png" alt="ISO 9001" width="60" height="59"></li>
+                    <li><img src="/img/iso_14001_footer.png" alt="ISO 14001" width="60" height="59"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div> <!-- main-container -->
+        
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>        
+        <script src="/js/parallax.js"></script>
+        <script src="/js/isotope.min.js"></script>
+        <script src="/js/smooth-scroll.min.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>

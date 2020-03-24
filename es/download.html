@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Descargas</title>
+        <link href="/favicon.ico" rel="icon" type="image/ico" />
+        <link href="/css/bootstrap.css" rel="stylesheet" />
+        <link href="/css/stack-interface.css" rel="stylesheet" />
+        <link href="/css/socicon.css" rel="stylesheet" />
+        <link href="/css/lightbox.min.css" rel="stylesheet" />
+        <link href="/css/flickity.css" rel="stylesheet" />
+        <link href="/css/theme.css" rel="stylesheet" />
+        <link href="/css/custom.css" rel="stylesheet" />
+        <link href="/css/font-roboto.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/util.js"></script>
+    </head>
+    <body class="">
+        <a id="start"></a>
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                            <a href="/es/">
+                                <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#navmenu;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="navmenu" class="bar bar--sm bar-1 hidden-xs " data-scroll-class='10vh:pos-fixed'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="/es/">
+                                    <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                    <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-lg-11 col-md-10 text-right">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal">
+    <li><a href="/es/">Inicio</a></li>
+    <li><a href="/es/products">Productos</a></li> 
+    <li><a href="/es/download">Descargas</a></li> 
+    <li><a href="/es/references">Referencias</a></li> 
+    <li><a href="/es/contact">Contacto</a></li>
+    <li class="dropdown dropdown--absolute hidden-xs">
+        <span class="dropdown__trigger">
+            <img alt="es" class="flag" src="/img/es.png">
+        </span>
+        <div class="dropdown__container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 dropdown__content">
+                        <ul id="menu-lang" class="menu-vertical text-left">
+                                <li><a data-lang="en" href="/en/download"><img alt="en" class="flag" src="/img/en.png"> English</a></li>
+                                <li><a data-lang="de" href="/de/download"><img alt="de" class="flag" src="/img/de.png"> Deutsch</a></li>
+                                <li><a data-lang="fr" href="/fr/download"><img alt="fr" class="flag" src="/img/fr.png"> Français</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="visible-xs">
+        <form class="form-inline">
+            <div class="input-select">
+                <select id="select-lang">
+                        <option data-lang="en"  value="/en/download">English</option>
+                        <option data-lang="es" selected value="/es/download">Español</option>
+                        <option data-lang="de"  value="/de/download">Deutsch</option>
+                        <option data-lang="fr"  value="/fr/download">Français</option>
+                </select>
+            </div>
+        </form>
+    </li>
+    <script>
+        $('#menu-lang a').click(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+        })
+        $('#select-lang').change(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+            // URL stored in option value
+            window.location.href = this.value;
+        });
+    </script>
+</ul>
+
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+            <section class="text-center space--xs">
+    <div class="container">
+        <h1>Descargas</h1>
+    </div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col">
+				<div class="tabs-container tabs--vertical fadeLeftRight">
+					<ul class="tabs">
+							
+							<li id="tab-general" class="active">
+								<div class="tab__title">
+									<span class="h5">General</span>
+								</div>
+								<div class="tab__content">
+									<table class="table table-borderless downloads-table">
+											<tr class="category">
+												<td colspan=4><hr>Documentación comercial</td>
+											</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/Iddero_products_2020_es.pdf">Guía de productos</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">16.64 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/verso-ip_A4_es.pdf">Folleto Iddero VERSO+IP</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">7.11 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/iddero-verso_A4_es.pdf">Folleto Iddero Verso</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">1.31 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/idderocloud_A4_es.pdf">Folleto idderocloud</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">614 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link youtube"><a href="https://youtu.be/P5vzxkkVlDE">Video Iddero Verso / VERSO+IP</a></td>
+														<td class="download-type"></td>
+														<td class="download-size"></td>
+														<td class="date"></td>
+												</tr>
+									</table>
+								</div>
+							</li>
+							
+							<li id="tab-verso_all" class="">
+								<div class="tab__title">
+									<span class="h5">Iddero Verso</span>
+								</div>
+								<div class="tab__content">
+									<table class="table table-borderless downloads-table">
+											<tr class="category">
+												<td colspan=4><hr>Documentación técnica</td>
+											</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/VERSO_IP_Datasheet_es.pdf">Hoja técnica Iddero VERSO+IP</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">526 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/VERSO_Datasheet_es.pdf">Hoja técnica Iddero Verso</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">506 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/VERSO_Manual_1.0.1_en.pdf">Manual de usuario Iddero Verso / VERSO+IP</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">1.56 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/VERSO_iconlist_es.pdf">Listado de iconos Iddero Verso / VERSO+IP</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">240 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/E-F401_Datasheet.pdf">Hoja técnica E-F401 (adaptador para montaje enrasado)</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">330 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+											<tr class="category">
+												<td colspan=4><hr>Documentación comercial</td>
+											</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/verso-ip_A4_es.pdf">Folleto Iddero VERSO+IP</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">7.11 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/iddero-verso_A4_es.pdf">Folleto Iddero Verso</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">1.31 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link youtube"><a href="https://youtu.be/P5vzxkkVlDE">Video Iddero Verso / VERSO+IP</a></td>
+														<td class="download-type"></td>
+														<td class="download-size"></td>
+														<td class="date"></td>
+												</tr>
+											<tr class="category">
+												<td colspan=4><hr>Software</td>
+											</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/Iddero_Verso_IP_1.2.knxprod">Iddero VERSO+IP: Programa de aplicación ETS (1.2)</a></td>
+														<td class="download-type"><span class="download-icon-knxprod">knxprod</span></td>
+														<td class="download-size">2.37 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/rc1-verso_ip-1.2.bin">Iddero VERSO+IP: Firmware update (1.2)</a></td>
+														<td class="download-type"><span class="download-icon-bin">bin</span></td>
+														<td class="download-size">1.71 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/Iddero_Verso_1.2.knxprod">Iddero Verso: Programa de aplicación ETS (1.2)</a></td>
+														<td class="download-type"><span class="download-icon-knxprod">knxprod</span></td>
+														<td class="download-size">1.2 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/rc1-verso-1.2.bin">Iddero Verso: Firmware update (1.2)</a></td>
+														<td class="download-type"><span class="download-icon-bin">bin</span></td>
+														<td class="download-size">1.71 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+									</table>
+								</div>
+							</li>
+							
+							<li id="tab-hcx" class="">
+								<div class="tab__title">
+									<span class="h5">HC3-KNX / HC3L-KNX</span>
+								</div>
+								<div class="tab__content">
+									<table class="table table-borderless downloads-table">
+											<tr class="category">
+												<td colspan=4><hr>Documentación técnica</td>
+											</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/HC3L-KNX_Datasheet_es.pdf">Hoja técnica HC3L-KNX</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">438 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/HC3-KNX_Datasheet_es.pdf">Hoja técnica HC3-KNX</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">783 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/HCx-KNX_Guia_rapida.pdf">Guía rápida HCx-KNX</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">1.31 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/HCx-KNX_Manual.pdf">Manual de usuario HCx-KNX</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">3.45 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+											<tr class="category">
+												<td colspan=4><hr>Software</td>
+											</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/hc3-knx-4.2.bin">Firmware update (4.2)</a></td>
+														<td class="download-type"><span class="download-icon-bin">bin</span></td>
+														<td class="download-size">2.07 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/iddero-config-4.2-setup.exe">iddero-config 4.2</a></td>
+														<td class="download-type"><span class="download-icon-exe">exe</span></td>
+														<td class="download-size">14.73 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/Release_notes-4.2.pdf">Release notes (4.2)</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">113 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+									</table>
+								</div>
+							</li>
+							
+							<li id="tab-homeserver" class="">
+								<div class="tab__title">
+									<span class="h5">Iddero Home Server</span>
+								</div>
+								<div class="tab__content">
+									<table class="table table-borderless downloads-table">
+											<tr class="category">
+												<td colspan=4><hr>Documentación técnica</td>
+											</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/SER1-KNX_Hoja_tecnica.pdf">Hoja técnica Iddero Home Server</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">327 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/SER1-KNX_Guia_rapida.pdf">Guía rápida Iddero Home Server</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">1.27 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+											<tr class="category">
+												<td colspan=4><hr>Software</td>
+											</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/ser1-knx-3.5.bin">Firmware update (3.5)</a></td>
+														<td class="download-type"><span class="download-icon-bin">bin</span></td>
+														<td class="download-size">2.08 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/iddero-config-3.5-setup.exe">iddero-config 3.5</a></td>
+														<td class="download-type"><span class="download-icon-exe">exe</span></td>
+														<td class="download-size">14.71 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/Release_notes-3.5.1.pdf">Release notes (3.5.1)</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">278 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+									</table>
+								</div>
+							</li>
+							
+							<li id="tab-system" class="">
+								<div class="tab__title">
+									<span class="h5">Sistema</span>
+								</div>
+								<div class="tab__content">
+									<table class="table table-borderless downloads-table">
+											<tr class="category">
+												<td colspan=4><hr>Documentación técnica</td>
+											</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/PS-K640_Datasheet_es.pdf">Hoja técnica fuente de alimentación KNX PS-K640</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">149 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+									</table>
+								</div>
+							</li>
+							
+							<li id="tab-accessory" class="">
+								<div class="tab__title">
+									<span class="h5">Accesorios</span>
+								</div>
+								<div class="tab__content">
+									<table class="table table-borderless downloads-table">
+											<tr class="category">
+												<td colspan=4><hr>Documentación técnica</td>
+											</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/DW-GSM_Hoja_tecnica.pdf">Hoja técnica DW-GSM</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">283 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/DW-GSM_Manual.pdf">Manual de usuario DW-GSM</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">540 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/DW-TS-N1P_Hoja_tecnica.pdf?v=201412">Hoja técnica DW-TS-N1P</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">111 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+									</table>
+								</div>
+							</li>
+							
+							<li id="tab-discontinued" class="">
+								<div class="tab__title">
+									<span class="h5">Descatalogados</span>
+								</div>
+								<div class="tab__content">
+									<table class="table table-borderless downloads-table">
+											<tr class="category">
+												<td colspan=4><hr>Documentación técnica</td>
+											</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/HC2L-KNX_Hoja_tecnica.pdf">Hoja técnica HC2L-KNX</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">419 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/HC2-KNX_Hoja_tecnica.pdf">Hoja técnica HC2-KNX</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">498 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/HC1i-KNX_Hoja_tecnica.pdf">Hoja técnica HC1i-KNX</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">789 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+											<tr class="category">
+												<td colspan=4><hr>Software</td>
+											</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/hc2-knx-3.5.1.bin">HC1i-KNX / HC2-KNX / HC2L-KNX: Firmware update (3.5.1)</a></td>
+														<td class="download-type"><span class="download-icon-bin">bin</span></td>
+														<td class="download-size">2.8 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/iddero-config-3.5-setup.exe">HC1i-KNX / HC2-KNX / HC2L-KNX: iddero-config 3.5</a></td>
+														<td class="download-type"><span class="download-icon-exe">exe</span></td>
+														<td class="download-size">14.71 MB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+												<tr class="file">
+														<td class="download-link"><a href="/files/Release_notes-3.5.1.pdf">HC1i-KNX / HC2-KNX / HC2L-KNX: Release notes (3.5.1)</a></td>
+														<td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+														<td class="download-size">278 KB</td>
+														<td class="date">Mar 2020</td>
+												</tr>
+									</table>
+								</div>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>	
+
+
+            <footer class="text-center-xs space--xs bg--dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6"> <!-- col-sm-7 -->
+                <div>
+                    <div class="type--fine-print">Copyright &copy; <span class="update-year"></span>. Todos los derechos reservados.</div>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print footer-links">
+                        <li><a href="/es/about">Sobre Iddero</a></li>
+                        <li class="hidden-xs">|</li>
+                        <li><a href="/es/legal">Información legal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print newsletter-link">
+                        <li><span>Newsletter Iddero</span><a class="type--uppercase" href="/es/newsletter">Suscríbete</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline social-list">
+                        <li><a href="https://www.youtube.com/iddero"><i class="socicon socicon-youtube icon icon--xs"></i></a></li>
+                        <li><a href="https://www.twitter.com/iddero"><i class="socicon socicon-twitter icon icon--xs"></i></a></li>
+                        <li><a href="https://www.facebook.com/iddero"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 text-right"> <!-- col-sm-5 text-center-xs -->
+                <ul class="list-inline list-logos">
+                    <li><img src="/img/knx_footer.png" alt="KNX" width="70" height="33"></li>
+                    <li><img src="/img/iso_9001_footer.png" alt="ISO 9001" width="60" height="59"></li>
+                    <li><img src="/img/iso_14001_footer.png" alt="ISO 14001" width="60" height="59"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div> <!-- main-container -->
+        
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>        
+        <script src="/js/parallax.js"></script>
+        <script src="/js/isotope.min.js"></script>
+        <script src="/js/smooth-scroll.min.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>

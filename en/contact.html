@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link href="/favicon.ico" rel="icon" type="image/ico" />
+        <link href="/css/bootstrap.css" rel="stylesheet" />
+        <link href="/css/stack-interface.css" rel="stylesheet" />
+        <link href="/css/socicon.css" rel="stylesheet" />
+        <link href="/css/lightbox.min.css" rel="stylesheet" />
+        <link href="/css/flickity.css" rel="stylesheet" />
+        <link href="/css/theme.css" rel="stylesheet" />
+        <link href="/css/custom.css" rel="stylesheet" />
+        <link href="/css/font-roboto.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/util.js"></script>
+    </head>
+    <body class="contact">
+        <a id="start"></a>
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                            <a href="/en/">
+                                <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#navmenu;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="navmenu" class="bar bar--sm bar-1 hidden-xs bar--transparent bar--absolute" data-scroll-class='10vh:pos-fixed'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="/en/">
+                                    <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                    <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-lg-11 col-md-10 text-right">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal">
+    <li><a href="/en/">Home</a></li>
+    <li><a href="/en/products">Products</a></li> 
+    <li><a href="/en/download">Download</a></li> 
+    <li><a href="/en/references">References</a></li> 
+    <li><a href="/en/contact">Contact</a></li>
+    <li class="dropdown dropdown--absolute hidden-xs">
+        <span class="dropdown__trigger">
+            <img alt="en" class="flag" src="/img/en.png">
+        </span>
+        <div class="dropdown__container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 dropdown__content">
+                        <ul id="menu-lang" class="menu-vertical text-left">
+                                <li><a data-lang="es" href="/es/contact"><img alt="es" class="flag" src="/img/es.png"> Español</a></li>
+                                <li><a data-lang="de" href="/de/contact"><img alt="de" class="flag" src="/img/de.png"> Deutsch</a></li>
+                                <li><a data-lang="fr" href="/fr/contact"><img alt="fr" class="flag" src="/img/fr.png"> Français</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="visible-xs">
+        <form class="form-inline">
+            <div class="input-select">
+                <select id="select-lang">
+                        <option data-lang="en" selected value="/en/contact">English</option>
+                        <option data-lang="es"  value="/es/contact">Español</option>
+                        <option data-lang="de"  value="/de/contact">Deutsch</option>
+                        <option data-lang="fr"  value="/fr/contact">Français</option>
+                </select>
+            </div>
+        </form>
+    </li>
+    <script>
+        $('#menu-lang a').click(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+        })
+        $('#select-lang').change(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+            // URL stored in option value
+            window.location.href = this.value;
+        });
+    </script>
+</ul>
+
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+            <div class="imagebg text-center height-40" data-overlay="5">
+    <div class="background-image-holder">
+        <img alt="background" src="/img/cover-contact.jpg">
+    </div>
+    <div class="container pos-vertical-center">
+        <div class="row">
+            <div class="col">
+                <div class="article__title">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="switchable">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-4">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="imageBullet"><img src="/img/email.gif" width="26" height="21" alt="email"></td>
+                            <td><p><script>(function(d,lhs,rhs) { d.write("<a href=\"mai"); d.write("lto:" + lhs + "&#64;"); d.write(rhs + "\">" + lhs + "&#64;" + rhs + "<\/a>"); })(document,"iddero","iddero.com")</script></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="imageBullet"><img alt="phone" src="/img/phone.gif" width="26" height="21"></td>
+                            <td><p>(+34) 952 02 04 23</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="imageBullet"><img alt="mail" src="/img/mail.gif" width="26" height="21"></td>
+                            <td><p><b>IDDERO</b><br>
+                                Av. Juan López Peñalver, 21<br>
+                                Parque Tecnológico de Andalucía<br>
+                                29590 Málaga (Spain)</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-7 col-12">
+                <div id="res_ok" class="form-result d-none">
+                    <p>Thank you! Form submitted successfully. We'll get back to you shortly.</p>
+                </div>
+                <div id="res_err" class="form-result d-none">
+                    <p>Oops! Something went wrong. Your request could not be processed. Please try again later...</p>
+                </div>
+
+                <form class="row" id="contact-form" method="post" action="http://forms.iddero.com/contact">
+                    <input type="hidden" name="lang" value="en">
+                    <input type="hidden" name="referer" value="https://www.iddero.com/en/contact">
+
+                    <div class="col-md-6 col-12">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <label for="company" class="form-label">Company</label>
+                        <input type="text" name="company" id="company" required>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="name&#64;domain.com" required>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <label for="country" class="form-label">Country</label>
+                        <div class="input-select">
+                            <select name="country" id="country" required>
+                                <option value="">&nbsp;</option>
+                                <script>window.defval="fake";</script>
+                                <script src="/js/countries_en.js"></script>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="qtype" class="form-label">How can we help you?</label>
+                        <div class="input-select">
+                            <select name="qtype" id="qtype">
+                                <option value="sales" selected="">I have a sales/commercial question</option>
+                                <option value="tech">I have a technical question</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="qtext" class="form-label">Please describe your question</label>
+                        <textarea name="qtext" id="qtext" rows="4" placeholder="Your question here" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <p class="small form-note">(*) All fields are mandatory</p>
+                    </div>
+                    <div class="col-md-5 col-lg-4 col-6">
+                        <button type="submit" class="btn btn--primary type--uppercase">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+(function () {
+    var res = $.queryParam('res');
+    if (res) {
+        $('#contact-form').hide();
+        $((res == 'ok') ? '#res_ok' : '#res_err').removeClass('d-none');
+    }
+})();
+</script>
+
+
+            <footer class="text-center-xs space--xs bg--dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6"> <!-- col-sm-7 -->
+                <div>
+                    <div class="type--fine-print">Copyright &copy; <span class="update-year"></span>. All rights reserved.</div>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print footer-links">
+                        <li><a href="/en/about">About Iddero</a></li>
+                        <li class="hidden-xs">|</li>
+                        <li><a href="/en/legal">Legal terms</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print newsletter-link">
+                        <li><span>Iddero Newsletter</span><a class="type--uppercase" href="/en/newsletter">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline social-list">
+                        <li><a href="https://www.youtube.com/iddero"><i class="socicon socicon-youtube icon icon--xs"></i></a></li>
+                        <li><a href="https://www.twitter.com/iddero"><i class="socicon socicon-twitter icon icon--xs"></i></a></li>
+                        <li><a href="https://www.facebook.com/iddero"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 text-right"> <!-- col-sm-5 text-center-xs -->
+                <ul class="list-inline list-logos">
+                    <li><img src="/img/knx_footer.png" alt="KNX" width="70" height="33"></li>
+                    <li><img src="/img/iso_9001_footer.png" alt="ISO 9001" width="60" height="59"></li>
+                    <li><img src="/img/iso_14001_footer.png" alt="ISO 14001" width="60" height="59"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div> <!-- main-container -->
+        
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>        
+        <script src="/js/parallax.js"></script>
+        <script src="/js/isotope.min.js"></script>
+        <script src="/js/smooth-scroll.min.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>

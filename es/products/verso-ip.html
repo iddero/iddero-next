@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iddero VERSO+IP</title>
+        <link href="/favicon.ico" rel="icon" type="image/ico" />
+        <link href="/css/bootstrap.css" rel="stylesheet" />
+        <link href="/css/stack-interface.css" rel="stylesheet" />
+        <link href="/css/socicon.css" rel="stylesheet" />
+        <link href="/css/lightbox.min.css" rel="stylesheet" />
+        <link href="/css/flickity.css" rel="stylesheet" />
+        <link href="/css/theme.css" rel="stylesheet" />
+        <link href="/css/custom.css" rel="stylesheet" />
+        <link href="/css/font-roboto.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/util.js"></script>
+    </head>
+    <body class="">
+        <a id="start"></a>
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                            <a href="/es/">
+                                <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#navmenu;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="navmenu" class="bar bar--sm bar-1 hidden-xs bar--transparent bar--absolute" data-scroll-class='10vh:pos-fixed'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="/es/">
+                                    <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                    <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-lg-11 col-md-10 text-right">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal">
+    <li><a href="/es/">Inicio</a></li>
+    <li><a href="/es/products">Productos</a></li> 
+    <li><a href="/es/download">Descargas</a></li> 
+    <li><a href="/es/references">Referencias</a></li> 
+    <li><a href="/es/contact">Contacto</a></li>
+    <li class="dropdown dropdown--absolute hidden-xs">
+        <span class="dropdown__trigger">
+            <img alt="es" class="flag" src="/img/es.png">
+        </span>
+        <div class="dropdown__container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 dropdown__content">
+                        <ul id="menu-lang" class="menu-vertical text-left">
+                                <li><a data-lang="en" href="/en/products/verso-ip"><img alt="en" class="flag" src="/img/en.png"> English</a></li>
+                                <li><a data-lang="de" href="/de/products/verso-ip"><img alt="de" class="flag" src="/img/de.png"> Deutsch</a></li>
+                                <li><a data-lang="fr" href="/fr/products/verso-ip"><img alt="fr" class="flag" src="/img/fr.png"> Français</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="visible-xs">
+        <form class="form-inline">
+            <div class="input-select">
+                <select id="select-lang">
+                        <option data-lang="en"  value="/en/products/verso-ip">English</option>
+                        <option data-lang="es" selected value="/es/products/verso-ip">Español</option>
+                        <option data-lang="de"  value="/de/products/verso-ip">Deutsch</option>
+                        <option data-lang="fr"  value="/fr/products/verso-ip">Français</option>
+                </select>
+            </div>
+        </form>
+    </li>
+    <script>
+        $('#menu-lang a').click(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+        })
+        $('#select-lang').change(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+            // URL stored in option value
+            window.location.href = this.value;
+        });
+    </script>
+</ul>
+
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+            <section class="imagebg videobg height-90 text-center" data-overlay="5">				
+    <div class="youtube-background" data-video-url="CT2HKDtOXHI"></div>
+    <div class="background-image-holder">
+        <img alt="image" src="/img/products/bg-thumbvideo-verso.jpg">
+    </div>
+    <div class="container pos-vertical-center">
+        <div class="row">
+            <div class="col">
+                <img alt="VERSO+IP" src="/img/products/logo-versoip-white.png">
+                <h2>
+                    Pantalla táctil KNX capacitiva de 4,3" con conexión IP
+                </h2>
+                <p class="h2 product-claim">
+                    déjate sorprender
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="imageblock switchable feature-large">
+    <div class="imageblock__content col-lg-6 col-md-4 hidden-xs">
+        <div class="background-image-holder">
+            <img alt="image" src="/img/products/tile01bg-versoip.jpg">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-7">
+                <h2>Ahora con conexión IP</h2>
+<p><strong>VERSO+</strong>IP mantiene el elegante diseño, la atractiva visualización,
+y toda la funcionalidad del controlador de estancias KNX <a href="verso">Iddero Verso</a>,
+e incorpora además conexión IP para control remoto desde smartphones y tablets,
+en cualquier momento y desde cualquier lugar.</p>
+<ul class="lead bullets">
+  <li>Apps disponibles para iOS y Android</li>
+  <li>Control directo a través de la red local (LAN) o a través de la nube sin necesidad de ninguna configuración adicional</li>
+  <li>Comunicaciones encriptadas y 100% seguras</li>
+</ul>
+                <div class="store-links">
+                    <div class="store-link app-store">
+                        <a href="https://itunes.apple.com/es/app/iddero-mobile/id1455689169?mt=8"><img alt="Disponible en App Store" src="https://linkmaker.itunes.apple.com/es-es/badge-lrg.svg?releaseDate=2019-03-16&kind=iossoftware&bubble=ios_apps"></a>
+                    </div>
+                    <div class="store-link">
+                        <a href="https://play.google.com/store/apps/details?id=com.ingelabs.cloudapp&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Disponible en Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/es_badge_web_generic.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="switchable imagebg switchable--switch height-60 overlay-80-xs" data-overlay="0">
+    <div class="background-image-holder">
+        <img alt="background" src="/img/products/bg-video-verso.jpg">
+    </div>
+    <div class="container pos-vertical-center">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>No es sólo una cara bonita</h2>
+<p>Programaciones horarias, gestión de alarmas, controlador interno de escenas, doble termostato, sensor de temperatura incorporado, cuatro entradas multifunción, conexión directa al bus KNK... Iddero Verso tiene todo lo que necesitas para tu proyecto KNX.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="switchable switchable--switch space--xs">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-5 col-md-6 slider-side-text">
+                <h2>Un interfaz de usuario que realmente querrás utilizar</h2>
+<p>Disfruta de un interfaz cuidado hasta el último detalle. Con una amplia variedad de controles, incluyendo control RGBW, barras de regulación, controles rotatorios y mucho más.</p>
+<p>Reconocimiento de gestos táctiles, imágenes de fondo configurables en todas las páginas... y por supuesto puedes personalizarlo y adaptarlo a tus gustos y necesidades.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">                             
+                <div class="slider" data-paging="true">
+                    <ul class="slides">
+                        <li><img alt="img" src="/img/products/verso_w_horizontal_03.png"></li>
+                        <li><img alt="img" src="/img/products/verso_b_horizontal_01.png"></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-center bg--secondary space--xs">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <h2>Acabados disponibles</h2>
+
+                <div class="tabs-container">
+                    <ul class="tabs">
+                        <li class="active">
+                            <div class="tab__title text-center">
+                                <img alt="" src="/img/products/icono_acabado_negro_glass.png" style="margin-bottom:0.8em">
+                                <span class="h5">Negro</span>
+                            </div>
+                            <div class="tab__content text-center">
+                                <div class="col-md-12">
+                                    <img alt="VERSO+IP-B" src="/img/products/verso_b_vertical_02.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tab__title text-center">
+                                <img alt="" src="/img/products/icono_acabado_blanco_glass.png" style="margin-bottom:0.8em">
+                                <span class="h5">Blanco</span>
+                            </div>
+                            <div class="tab__content text-center">
+                                <div class="col-md-12">
+                                    <img alt="VERSO+IP-W" src="/img/products/verso_w_vertical_02.png">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+<section class="text-center space--xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Descargas</h2>
+
+                <table class="table table-borderless downloads-table">
+                    <tbody>
+                            <tr class="category">
+                                <td colspan=4><hr>Documentación técnica</td>
+                            </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/VERSO_IP_Datasheet_es.pdf">Hoja técnica Iddero VERSO+IP</a></td>
+                                        <td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+                                        <td class="download-size">526 KB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/VERSO_Manual_1.0.1_en.pdf">Manual de usuario Iddero Verso / VERSO+IP</a></td>
+                                        <td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+                                        <td class="download-size">1.56 MB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/VERSO_iconlist_es.pdf">Listado de iconos Iddero Verso / VERSO+IP</a></td>
+                                        <td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+                                        <td class="download-size">240 KB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/E-F401_Datasheet.pdf">Hoja técnica E-F401 (adaptador para montaje enrasado)</a></td>
+                                        <td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+                                        <td class="download-size">330 KB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                            <tr class="category">
+                                <td colspan=4><hr>Documentación comercial</td>
+                            </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/verso-ip_A4_es.pdf">Folleto Iddero VERSO+IP</a></td>
+                                        <td class="download-type"><span class="download-icon-pdf">pdf</span></td>
+                                        <td class="download-size">7.11 MB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                                <tr class="file">
+                                        <td class="download-link youtube"><a href="https://youtu.be/P5vzxkkVlDE">Video Iddero Verso / VERSO+IP</a></td>
+                                        <td class="download-type"></td>
+                                        <td class="download-size"></td>
+                                        <td class="date"></td>
+                                </tr>
+                            <tr class="category">
+                                <td colspan=4><hr>Software</td>
+                            </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/Iddero_Verso_IP_1.2.knxprod">Iddero VERSO+IP: Programa de aplicación ETS (1.2)</a></td>
+                                        <td class="download-type"><span class="download-icon-knxprod">knxprod</span></td>
+                                        <td class="download-size">2.37 MB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                                <tr class="file">
+                                        <td class="download-link"><a href="/files/rc1-verso_ip-1.2.bin">Iddero VERSO+IP: Firmware update (1.2)</a></td>
+                                        <td class="download-type"><span class="download-icon-bin">bin</span></td>
+                                        <td class="download-size">1.71 MB</td>
+                                        <td class="date">Mar 2020</td>
+                                </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>
+
+
+
+
+            <footer class="text-center-xs space--xs bg--dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6"> <!-- col-sm-7 -->
+                <div>
+                    <div class="type--fine-print">Copyright &copy; <span class="update-year"></span>. Todos los derechos reservados.</div>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print footer-links">
+                        <li><a href="/es/about">Sobre Iddero</a></li>
+                        <li class="hidden-xs">|</li>
+                        <li><a href="/es/legal">Información legal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print newsletter-link">
+                        <li><span>Newsletter Iddero</span><a class="type--uppercase" href="/es/newsletter">Suscríbete</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline social-list">
+                        <li><a href="https://www.youtube.com/iddero"><i class="socicon socicon-youtube icon icon--xs"></i></a></li>
+                        <li><a href="https://www.twitter.com/iddero"><i class="socicon socicon-twitter icon icon--xs"></i></a></li>
+                        <li><a href="https://www.facebook.com/iddero"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 text-right"> <!-- col-sm-5 text-center-xs -->
+                <ul class="list-inline list-logos">
+                    <li><img src="/img/knx_footer.png" alt="KNX" width="70" height="33"></li>
+                    <li><img src="/img/iso_9001_footer.png" alt="ISO 9001" width="60" height="59"></li>
+                    <li><img src="/img/iso_14001_footer.png" alt="ISO 14001" width="60" height="59"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div> <!-- main-container -->
+        
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>        
+        <script src="/js/parallax.js"></script>
+        <script src="/js/isotope.min.js"></script>
+        <script src="/js/smooth-scroll.min.js"></script>
+                <script src="/js/flickity.min.js"></script>
+                <script src="/js/ytplayer.min.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>

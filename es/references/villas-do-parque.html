@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Villas do Parque</title>
+        <link href="/favicon.ico" rel="icon" type="image/ico" />
+        <link href="/css/bootstrap.css" rel="stylesheet" />
+        <link href="/css/stack-interface.css" rel="stylesheet" />
+        <link href="/css/socicon.css" rel="stylesheet" />
+        <link href="/css/lightbox.min.css" rel="stylesheet" />
+        <link href="/css/flickity.css" rel="stylesheet" />
+        <link href="/css/theme.css" rel="stylesheet" />
+        <link href="/css/custom.css" rel="stylesheet" />
+        <link href="/css/font-roboto.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/util.js"></script>
+    </head>
+    <body class="">
+        <a id="start"></a>
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                            <a href="/es/">
+                                <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#navmenu;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="navmenu" class="bar bar--sm bar-1 hidden-xs bar--transparent bar--absolute" data-scroll-class='10vh:pos-fixed'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="/es/">
+                                    <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png">
+                                    <img class="logo logo-light" alt="logo" src="/img/logo-light.png">
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-lg-11 col-md-10 text-right">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal">
+    <li><a href="/es/">Inicio</a></li>
+    <li><a href="/es/products">Productos</a></li> 
+    <li><a href="/es/download">Descargas</a></li> 
+    <li><a href="/es/references">Referencias</a></li> 
+    <li><a href="/es/contact">Contacto</a></li>
+    <li class="dropdown dropdown--absolute hidden-xs">
+        <span class="dropdown__trigger">
+            <img alt="es" class="flag" src="/img/es.png">
+        </span>
+        <div class="dropdown__container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 dropdown__content">
+                        <ul id="menu-lang" class="menu-vertical text-left">
+                                <li><a data-lang="en" href="/en/references/villas-do-parque"><img alt="en" class="flag" src="/img/en.png"> English</a></li>
+                                <li><a data-lang="de" href="/de/references/villas-do-parque"><img alt="de" class="flag" src="/img/de.png"> Deutsch</a></li>
+                                <li><a data-lang="fr" href="/fr/references/villas-do-parque"><img alt="fr" class="flag" src="/img/fr.png"> Français</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="visible-xs">
+        <form class="form-inline">
+            <div class="input-select">
+                <select id="select-lang">
+                        <option data-lang="en"  value="/en/references/villas-do-parque">English</option>
+                        <option data-lang="es" selected value="/es/references/villas-do-parque">Español</option>
+                        <option data-lang="de"  value="/de/references/villas-do-parque">Deutsch</option>
+                        <option data-lang="fr"  value="/fr/references/villas-do-parque">Français</option>
+                </select>
+            </div>
+        </form>
+    </li>
+    <script>
+        $('#menu-lang a').click(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+        })
+        $('#select-lang').change(function(ev) {
+            $.setCookie('lang', $(this).data('lang'));
+            // URL stored in option value
+            window.location.href = this.value;
+        });
+    </script>
+</ul>
+
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+                <section class="unpad">
+        <article>
+            <div class="imagebg text-center parallax height-40" data-overlay="5">
+                <div class="background-image-holder">
+                    <img alt="background" src="/img/references/cover-villas.jpg">
+                </div>
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="article__title">
+                                <h1>Villas do Parque</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <div class="article__body">
+                                <blockquote class="font-italic">
+    "Vivir en una de estas viviendas exclusivas es estar en constante contacto con la naturaleza, y al mismo tiempo disfrutar de un sistema de seguridad único. Las viviendas disponen de vigilancia las 24 horas del día, y están equipadas con un sistema de automatización inteligente que incrementa la seguridad de la urbanización y se puede controlar de forma remota. Además, este sistema contribuye al ahorro energético, lo cual, junto con los materiales utilizados y los espacios verdes, hacen que el proyecto sea sostenible y esté en armonía con su entorno natural."
+    <p class="small text-right">
+        -- Domus Empreendimentos Imobiliários, Lda.
+    </p>
+</blockquote>
+<blockquote class="font-italic">
+    "Hemos seleccionado Iddero como producto principal para nuestras instalaciones gracias a su estabilidad, amplia funcionalidad, mejoras constantes, y al excelente soporte técnico."      
+    <p class="small text-right">
+        -- Ricardo J. Pinto
+    </p>
+</blockquote>
+<h3>Ubicación y tipo de proyecto</h3>
+<p>
+    La urbanización "Villas do Parque" es un complejo residencial compuesto por 21 exclusivos chalets, ubicados cerca del Castillo de Queijo, en pleno Parque de la Ciudad, en Oporto, Portugal.
+</p>
+<h3>Descripción</h3>
+<p>
+    Las viviendas de Villas do Parque disponen disponen de un sistema de automatización totalmente integrado basado en el estándar KNX. En cada vivienda el núcleo de la instalación consiste en una pantalla táctil <a href="/es/products/hc3-knx">Iddero HC2-KNX</a> 7" que desempeña las siguientes funciones:
+</p>
+<ul>
+    <li>Notificaciones por e-mail en tiempo real cuando se detecta una alarma en la centralita de seguridad</li>
+    <li>Armado y desarmado de la seguridad protegido por contraseña (desde la propia pantalla táctil o a través Internet)</li>
+    <li>Corte automático del suministro de agua en caso de detección de fugas</li>
+    <li>Simulación de presencia</li>
+    <li>Programaciones horarias de iluminación y persianas</li>
+    <li>Escenas predefinidas para llegar a casa, salir de casa, modo cine, modo noche, y otras creadas por el usuario</li>
+    <li>Integración del control de aire acondicionado LG, y del sistema de ventilación común de los baños</li>
+    <li>Control completo de la vivienda desde iPhone e iPad</li>
+    <li>Visualización de video procedente de DVR y cámaras IP Provision</li>
+    <li>Interconexión con videoportero 2N Helios IP</li>
+</ul>
+<p>
+    La versatilidad y fiabilidad de las pantallas táctiles Iddero, junto con las funciones de visualización de cámaras IP e integración con videoporteros, las convierten en una opción perfecta para este proyecto.
+</p>
+<p>
+    <i>Este proyecto ganó el primer premio en el I Concurso de Proyectos Iddero-Futurasmus.</i>
+</p>
+
+
+
+
+                                    <div class="boxed boxed--md boxed--border bg--secondary">
+                                        <div class="text-block">
+                                                <h4>Autor del proyecto</h4>
+    <p>
+        Ricardo J. Pinto<br>
+        <a href="http://pt.linkedin.com/in/ricardojpinto">http://pt.linkedin.com/in/ricardojpinto</a>
+    </p>
+
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+        </article>
+    </section>
+
+    <section class="bg--secondary">
+        <div class="container">
+                <div class="row text-center justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <h2 style="margin-bottom: 80px;">Galería de imágenes</h2>
+        </div>
+    </div>
+    <div class="masonry">
+        <div class="masonry__container row masonry--active">
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/villas_do_parque/villas_do_parque_00.jpg"><img src="/img/references/villas_do_parque/villas_do_parque_00_tn.jpg" alt="Villas do Parque"></a>
+            </div>            
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/villas_do_parque/villas_do_parque_01.jpg"><img src="/img/references/villas_do_parque/villas_do_parque_01_tn.jpg" alt="Villas do Parque"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/villas_do_parque/villas_do_parque_02.jpg"><img src="/img/references/villas_do_parque/villas_do_parque_02_tn.jpg" alt="Villas do Parque"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/villas_do_parque/villas_do_parque_03.jpg"><img src="/img/references/villas_do_parque/villas_do_parque_03_tn.jpg" alt="Villas do Parque"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/villas_do_parque/villas_do_parque_04.jpg"><img src="/img/references/villas_do_parque/villas_do_parque_04_tn.jpg" alt="Villas do Parque"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/villas_do_parque/villas_do_parque_05.jpg"><img src="/img/references/villas_do_parque/villas_do_parque_05_tn.jpg" alt="Villas do Parque"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/villas_do_parque/villas_do_parque_06.jpg"><img src="/img/references/villas_do_parque/villas_do_parque_06_tn.jpg" alt="Villas do Parque"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/villas_do_parque/villas_do_parque_07.jpg"><img src="/img/references/villas_do_parque/villas_do_parque_07_tn.jpg" alt="Villas do Parque"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/villas_do_parque/villas_do_parque_08.jpg"><img src="/img/references/villas_do_parque/villas_do_parque_08_tn.jpg" alt="Villas do Parque"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/villas_do_parque/villas_do_parque_09.jpg"><img src="/img/references/villas_do_parque/villas_do_parque_09_tn.jpg" alt="Villas do Parque"></a>
+            </div>
+            <div class="masonry__item col-lg-4 col-6">
+                <a data-lightbox="gallery" href="/img/references/villas_do_parque/villas_do_parque_10.jpg"><img src="/img/references/villas_do_parque/villas_do_parque_10_tn.jpg" alt="Villas do Parque"></a>
+            </div>                    
+        </div>
+    </div>
+
+        </div>
+    </section>
+
+    <script src="/js/lightbox.min.js"></script>
+    <script>
+    lightbox.option({
+        'resizeDuration': 100,
+        'imageFadeDuration': 100,
+        'fadeDuration': 100,
+        'albumLabel': 'Villas do Parque: %1 / %2'
+    })
+    </script>
+
+
+            <footer class="text-center-xs space--xs bg--dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6"> <!-- col-sm-7 -->
+                <div>
+                    <div class="type--fine-print">Copyright &copy; <span class="update-year"></span>. Todos los derechos reservados.</div>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print footer-links">
+                        <li><a href="/es/about">Sobre Iddero</a></li>
+                        <li class="hidden-xs">|</li>
+                        <li><a href="/es/legal">Información legal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline type--fine-print newsletter-link">
+                        <li><span>Newsletter Iddero</span><a class="type--uppercase" href="/es/newsletter">Suscríbete</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-inline social-list">
+                        <li><a href="https://www.youtube.com/iddero"><i class="socicon socicon-youtube icon icon--xs"></i></a></li>
+                        <li><a href="https://www.twitter.com/iddero"><i class="socicon socicon-twitter icon icon--xs"></i></a></li>
+                        <li><a href="https://www.facebook.com/iddero"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 text-right"> <!-- col-sm-5 text-center-xs -->
+                <ul class="list-inline list-logos">
+                    <li><img src="/img/knx_footer.png" alt="KNX" width="70" height="33"></li>
+                    <li><img src="/img/iso_9001_footer.png" alt="ISO 9001" width="60" height="59"></li>
+                    <li><img src="/img/iso_14001_footer.png" alt="ISO 14001" width="60" height="59"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div> <!-- main-container -->
+        
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>        
+        <script src="/js/parallax.js"></script>
+        <script src="/js/isotope.min.js"></script>
+        <script src="/js/smooth-scroll.min.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
