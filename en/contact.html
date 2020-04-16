@@ -224,8 +224,8 @@
 (function () {
     var res = $.queryParam('res');
     if (res) {
-        $('#contact-form').hide();
-        $((res == 'ok') ? '#res_ok' : '#res_err').removeClass('d-none');
+        $.hide('contact-form');
+        $.removeClass((res == 'ok') ? 'res_ok' : 'res_err', 'd-none');
     }
 })();
 </script>

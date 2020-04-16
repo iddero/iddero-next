@@ -203,19 +203,19 @@ Mit der Annahme dieser AGB übernehmen Sie die volle Verantwortung für die Gena
 (function () {
     var res = $.queryParam('res');
     if (res) {
-        $('#config-form').hide();
+        $.hide('config-form');
         var el;
         switch (res) {
-            case 'ok': el = "#res_ok"; break;
-            case 'err': el = "#res_err"; break;
-            case 'reply_ok': el = "#reply_ok"; break;
-            case 'reply_err': el = "#reply_err"; break;
+            case 'ok': el = "res_ok"; break;
+            case 'err': el = "res_err"; break;
+            case 'reply_ok': el = "reply_ok"; break;
+            case 'reply_err': el = "reply_err"; break;
         }
-        $(el).removeClass('d-none');
+        $.removeClass(el, 'd-none');
     }
     var serial = $.queryParam('serial');
     if (serial) {
-        $('#serial').val(serial);
+        $.val('serial', serial);
     }
 })();
 </script>
