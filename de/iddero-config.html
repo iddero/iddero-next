@@ -98,10 +98,10 @@
     </li>
     <script>
         $('#menu-lang a').click(function(ev) {
-            $.setCookie('lang', $(this).data('lang'));
+            $$.setCookie('lang', $(this).data('lang'));
         })
         $('#select-lang').change(function(ev) {
-            $.setCookie('lang', $(this).data('lang'));
+            $$.setCookie('lang', $(this).data('lang'));
             // URL stored in option value
             window.location.href = this.value;
         });
@@ -136,11 +136,11 @@
                     <div id="res_ok" class="form-result d-none">
                         <p>Aktivierungsanforderung erfolgreich gesendet.</p>
 <p>Falls keine Antwort innerhalb 48 Stunden, <strong>überprüfen Sie zuerst den Spamordner in Ihrem</strong> E-Mail-Konto.</p>
-<p>Wenn erforderlich, wenden Sie sich direkt an Iddero über: <script>$.email('iddero', 'iddero.com')</script></p>
+<p>Wenn erforderlich, wenden Sie sich direkt an Iddero über: <script>$$.email('iddero', 'iddero.com')</script></p>
                     </div>
                     <div id="res_err" class="form-result d-none">
                         <p>Fehler beim senden der Aktivierung aufgetreten.</p>
-<p>Bitte wenden Sie sich direkt an Iddero über: <script>$.email('iddero', 'iddero.com')</script>.</p>
+<p>Bitte wenden Sie sich direkt an Iddero über: <script>$$.email('iddero', 'iddero.com')</script>.</p>
                     </div>
                     <div id="reply_ok" class="form-result d-none">
                         <p>Response e-mail sent successfully.</p>
@@ -201,9 +201,9 @@ Mit der Annahme dieser AGB übernehmen Sie die volle Verantwortung für die Gena
 
 <script>
 (function () {
-    var res = $.queryParam('res');
+    var res = $$.queryParam('res');
     if (res) {
-        $.hide('config-form');
+        $$.hide('config-form');
         var el;
         switch (res) {
             case 'ok': el = "res_ok"; break;
@@ -211,11 +211,11 @@ Mit der Annahme dieser AGB übernehmen Sie die volle Verantwortung für die Gena
             case 'reply_ok': el = "reply_ok"; break;
             case 'reply_err': el = "reply_err"; break;
         }
-        $.removeClass(el, 'd-none');
+        $$.removeClass(el, 'd-none');
     }
-    var serial = $.queryParam('serial');
+    var serial = $$.queryParam('serial');
     if (serial) {
-        $.val('serial', serial);
+        $$.val('serial', serial);
     }
 })();
 </script>

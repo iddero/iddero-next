@@ -98,10 +98,10 @@
     </li>
     <script>
         $('#menu-lang a').click(function(ev) {
-            $.setCookie('lang', $(this).data('lang'));
+            $$.setCookie('lang', $(this).data('lang'));
         })
         $('#select-lang').change(function(ev) {
-            $.setCookie('lang', $(this).data('lang'));
+            $$.setCookie('lang', $(this).data('lang'));
             // URL stored in option value
             window.location.href = this.value;
         });
@@ -136,11 +136,11 @@
                     <div id="res_ok" class="form-result d-none">
                         <p>Activation request submitted successfully.</p>
 <p>If you don't receive any response after 48 hours, please <strong>check the spam folder of your mailbox first</strong>.</p>
-<p>If necessary, you can contact Iddero directly at: <script>$.email('iddero', 'iddero.com')</script>.</p>
+<p>If necessary, you can contact Iddero directly at: <script>$$.email('iddero', 'iddero.com')</script>.</p>
                     </div>
                     <div id="res_err" class="form-result d-none">
                         <p>An error occurred while submitting the activation request.</p>
-<p>Please contact Iddero directly at:  <script>$.email('iddero', 'iddero.com')</script>.</p>
+<p>Please contact Iddero directly at:  <script>$$.email('iddero', 'iddero.com')</script>.</p>
                     </div>
                     <div id="reply_ok" class="form-result d-none">
                         <p>Response e-mail sent successfully.</p>
@@ -201,9 +201,9 @@ By accepting these terms and conditions, you accept all responsibility related t
 
 <script>
 (function () {
-    var res = $.queryParam('res');
+    var res = $$.queryParam('res');
     if (res) {
-        $.hide('config-form');
+        $$.hide('config-form');
         var el;
         switch (res) {
             case 'ok': el = "res_ok"; break;
@@ -211,11 +211,11 @@ By accepting these terms and conditions, you accept all responsibility related t
             case 'reply_ok': el = "reply_ok"; break;
             case 'reply_err': el = "reply_err"; break;
         }
-        $.removeClass(el, 'd-none');
+        $$.removeClass(el, 'd-none');
     }
-    var serial = $.queryParam('serial');
+    var serial = $$.queryParam('serial');
     if (serial) {
-        $.val('serial', serial);
+        $$.val('serial', serial);
     }
 })();
 </script>

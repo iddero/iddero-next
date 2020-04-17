@@ -98,10 +98,10 @@
     </li>
     <script>
         $('#menu-lang a').click(function(ev) {
-            $.setCookie('lang', $(this).data('lang'));
+            $$.setCookie('lang', $(this).data('lang'));
         })
         $('#select-lang').change(function(ev) {
-            $.setCookie('lang', $(this).data('lang'));
+            $$.setCookie('lang', $(this).data('lang'));
             // URL stored in option value
             window.location.href = this.value;
         });
@@ -190,9 +190,9 @@
 
 <script>
 (function () {
-    var email = $.queryParam('email');
+    var email = $$.queryParam('email');
     if (email) {
-        $.val('email', email);
+        $$.val('email', email);
     }
 })();
 </script>

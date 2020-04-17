@@ -98,10 +98,10 @@
     </li>
     <script>
         $('#menu-lang a').click(function(ev) {
-            $.setCookie('lang', $(this).data('lang'));
+            $$.setCookie('lang', $(this).data('lang'));
         })
         $('#select-lang').change(function(ev) {
-            $.setCookie('lang', $(this).data('lang'));
+            $$.setCookie('lang', $(this).data('lang'));
             // URL stored in option value
             window.location.href = this.value;
         });
@@ -222,10 +222,10 @@
 
 <script>
 (function () {
-    var res = $.queryParam('res');
+    var res = $$.queryParam('res');
     if (res) {
-        $.hide('contact-form');
-        $.removeClass((res == 'ok') ? 'res_ok' : 'res_err', 'd-none');
+        $$.hide('contact-form');
+        $$.removeClass((res == 'ok') ? 'res_ok' : 'res_err', 'd-none');
     }
 })();
 </script>
