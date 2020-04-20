@@ -5,7 +5,7 @@
     <title>Iddero</title>
     <script>
     (function() {
-        function get_cookie(name) {
+        function cookie(name) {
             var nameEQ = name + '=';
             var ca = document.cookie.split('; ');
             for (var i = 0; i < ca.length; i++) {
@@ -15,7 +15,9 @@
             return null;
         }
 
-        var lang = get_cookie('lang') || 'en';
+        var lang = cookie('lang');
+        if ('es|en|de|fr'.indexOf(lang) == -1)
+            lang = 'en';
 
         window.location.replace('/' + lang + '/404');
     }) ();

@@ -20,7 +20,6 @@
         <link href="/css/custom.css" rel="stylesheet" />
         <link href="/css/font-roboto.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
-        <script src="/js/jquery-3.1.1.min.js"></script>
         <script src="/js/util.js"></script>
     </head>
     <body class="">
@@ -88,24 +87,14 @@
         <form class="form-inline">
             <div class="input-select">
                 <select id="select-lang">
-                        <option data-lang="en" selected value="/en/products/ps-k640">English</option>
-                        <option data-lang="es"  value="/es/products/ps-k640">Español</option>
-                        <option data-lang="de"  value="/de/products/ps-k640">Deutsch</option>
-                        <option data-lang="fr"  value="/fr/products/ps-k640">Français</option>
+                        <option selected value="en;/en/products/ps-k640">English</option>
+                        <option  value="es;/es/products/ps-k640">Español</option>
+                        <option  value="de;/de/products/ps-k640">Deutsch</option>
+                        <option  value="fr;/fr/products/ps-k640">Français</option>
                 </select>
             </div>
         </form>
     </li>
-    <script>
-        $('#menu-lang a').click(function(ev) {
-            $$.setCookie('lang', $(this).data('lang'));
-        })
-        $('#select-lang').change(function(ev) {
-            $$.setCookie('lang', $(this).data('lang'));
-            // URL stored in option value
-            window.location.href = this.value;
-        });
-    </script>
 </ul>
 
                             </div>
@@ -206,7 +195,9 @@ output. With status LEDs and bus RESET button.</p>
         
         <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
             <i class="stack-interface stack-up-open-big"></i>
-        </a>        
+        </a>
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/site.js"></script>
         <script src="/js/parallax.js"></script>
         <script src="/js/isotope.min.js"></script>
         <script src="/js/smooth-scroll.min.js"></script>

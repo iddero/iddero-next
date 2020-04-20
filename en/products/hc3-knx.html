@@ -20,7 +20,6 @@
         <link href="/css/custom.css" rel="stylesheet" />
         <link href="/css/font-roboto.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
-        <script src="/js/jquery-3.1.1.min.js"></script>
         <script src="/js/util.js"></script>
     </head>
     <body class="">
@@ -88,24 +87,14 @@
         <form class="form-inline">
             <div class="input-select">
                 <select id="select-lang">
-                        <option data-lang="en" selected value="/en/products/hc3-knx">English</option>
-                        <option data-lang="es"  value="/es/products/hc3-knx">Español</option>
-                        <option data-lang="de"  value="/de/products/hc3-knx">Deutsch</option>
-                        <option data-lang="fr"  value="/fr/products/hc3-knx">Français</option>
+                        <option selected value="en;/en/products/hc3-knx">English</option>
+                        <option  value="es;/es/products/hc3-knx">Español</option>
+                        <option  value="de;/de/products/hc3-knx">Deutsch</option>
+                        <option  value="fr;/fr/products/hc3-knx">Français</option>
                 </select>
             </div>
         </form>
     </li>
-    <script>
-        $('#menu-lang a').click(function(ev) {
-            $$.setCookie('lang', $(this).data('lang'));
-        })
-        $('#select-lang').change(function(ev) {
-            $$.setCookie('lang', $(this).data('lang'));
-            // URL stored in option value
-            window.location.href = this.value;
-        });
-    </script>
 </ul>
 
                             </div>
@@ -448,7 +437,9 @@ manufacturers<sup>(*)</sup>, and for generic SIP door stations.</p>
         
         <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
             <i class="stack-interface stack-up-open-big"></i>
-        </a>        
+        </a>
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/site.js"></script>
         <script src="/js/parallax.js"></script>
         <script src="/js/isotope.min.js"></script>
         <script src="/js/smooth-scroll.min.js"></script>

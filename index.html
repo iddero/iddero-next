@@ -44,7 +44,9 @@
             return 'en';
         }
 
-        var lang = cookie('lang') || detect();
+        var lang = cookie('lang');
+        if ('es|en|de|fr'.indexOf(lang) == -1)
+            lang = detect();
 
         window.location.replace('/' + lang);
     }) ();
