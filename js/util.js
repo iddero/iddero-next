@@ -1,1 +1,44 @@
-window.$$=window.$$||{},function(){function e(e){return n.getElementById(e)}var n=document;$$.queryParam=function(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var n=new RegExp("[\\?&]"+e+"=([^&#]*)"),t=n.exec(location.search);return null==t?"":decodeURIComponent(t[1].replace(/\+/g," "))},$$.setCookie=function(e,t,i){i=i||3650;var o=864e5*i,a=new Date;a.setTime(a.getTime()+o),n.cookie=e+"="+t+"; expires="+a.toGMTString()+"; path=/"},$$.email=function(e,t){n.write('<a href="mai'),n.write("lto:"+e+"&#64;"),n.write(t+'">'+e+"&#64;"+t+"</a>")},$$.hide=function(n){e(n).style.display="none"},$$.removeClass=function(n,t){e(n).classList.remove(t)},$$.val=function(n,t){e(n).value=t}}();
+window.$$ = window.$$ || {};
+
+(function() {
+    var d = document;
+
+    $$.queryParam = function(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+        var results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    $$.setCookie = function(name, val, days) {
+        days = days || (10 * 365);
+        var age = days * (24 * 60 * 60 * 1000);
+        var date = new Date();
+        date.setTime(date.getTime() + age);
+        d.cookie = name + '=' + val + '; expires=' + date.toGMTString() + '; path=/';
+    }
+
+    $$.email = function(lhs, rhs) {
+        d.write('<a href="mai');
+        d.write('lto:' + lhs + '&#64;');
+        d.write(rhs + '">' + lhs + '&#64;' + rhs + '</a>');
+    }
+
+    // No-jQuery helpers
+
+    function get(id) {
+        return d.getElementById(id);
+    }
+
+    $$.hide = function(id) {
+        get(id).style.display = 'none';
+    }
+
+    $$.removeClass = function(id, cls) {
+        get(id).classList.remove(cls);
+    }
+
+    $$.val = function(id, value) {
+        get(id).value = value;
+    }
+})();
