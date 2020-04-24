@@ -648,7 +648,73 @@ form.row {
     margin-bottom: 3em;
 }
 
+/* === ACCESSORIES === */
+
+@media (min-width: 768px) {
+    /* Replicate Stack style for h2+.slider */
+    h2+.carousel, .h2+.carousel {
+        margin-top: 3.71428571em;
+    }
+}
+
+.accessories .carousel li {
+    width: 200px;
+}
+
+.accessories .carousel li + li {
+    margin-left: 70px;
+}
+
+.accessories .feature {
+    /* Override default Stack style */
+    margin-bottom: 0;
+}
+
+.accessories .feature span {
+    /* Match font size in downloads table */
+    font-size: initial;
+}
+
+.accessories .feature a:hover {
+    /* Disable text-decoration for enclosing <a> tag */
+    text-decoration: none;
+}
+
+.accessories .feature a:hover span {
+    /* Reenable text-decoration for span element */
+    text-decoration: underline;
+}
+
+.accessories .feature img {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+.accessories .flickity-prev-next-button:disabled {
+    /* Hide buttons when disabled */
+    opacity: 0;
+}
+
+@media all and (max-width: 990px) {
+    /* Stack hides this the prev/next arrows for medium resolutions,
+     * but we want to have them always enabled. */
+    .accessories .flickity-prev-next-button {
+        display: initial;
+    }
+}
+
 /* === DOWNLOADS === */
+
+.accessories + .downloads {
+    /* Stack removes padding-top if there are two consecutive
+     * sections without any bg--* class. Add it back (all of it
+     * if we use a border, or some of it otherwise).
+     * This can be removed if we set bg--secondary in one of the
+     * two sections. */
+    padding-top: 3.71428571em !important;
+    border-top: 1px solid #ebebeb;
+    /*padding-top: 2em !important;*/
+}
 
 table.downloads-table {
     /* Stack sets font-size to 87.5% in html, fix that */

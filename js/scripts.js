@@ -2960,3 +2960,29 @@ mr = (function (mr, $, window, document){
 	  return mr;
 
 }(mr, jQuery, window, document));
+
+
+//////////////// CUSTOM
+
+// 'wrapAround' doesn't work well if the cells don't fill the container
+// 'groupCells' is used so that prev/next buttons are disabled if not needed [1]
+// 'contain' removes empty space at the sides [2]
+// Both 'groupCells' and 'contain' will center cells if they don't fill the container
+// 'imagesLoaded' recalculates height once images have been loaded [3]
+//
+//  [1]: https://github.com/metafizzy/flickity/issues/495
+//  [2]: https://flickity.metafizzy.co/options.html#contain
+//  [3]: https://flickity.metafizzy.co/options.html#imagesloaded
+
+$('.carousel').each(function() {
+    var options = {
+        prevNextButtons: true,
+        pageDots: false,
+        draggable: true,
+        wrapAround: false,
+        groupCells: true,
+        contain: true,
+        imagesLoaded: true,
+    };
+    $(this).flickity(options);
+});
