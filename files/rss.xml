@@ -6,6 +6,24 @@
 	<description>Iddero product downloads</description>
 	<atom:link href="http://www.iddero.com/files/rss.xml" rel="self" type="application/rss+xml" />
 	<item>
+		<title>iddero-config-4.3-setup.exe</title>
+		<link>http://www.iddero.com/files/iddero-config-4.3-setup.exe</link>
+		<guid isPermaLink="false">6bc9fb8eed419ffd920dc4d44701311a5305eb4378263a7e2e4180648d2cfedd</guid>
+		<pubDate>Thu, 25 Jun 2020 14:22:32 +0000</pubDate>
+	</item>
+	<item>
+		<title>hc3-knx-4.3.bin</title>
+		<link>http://www.iddero.com/files/hc3-knx-4.3.bin</link>
+		<guid isPermaLink="false">2e286ef3d3f5083457581d8ee6a7ee6ef3de31d91b2dbad211987e8f3e62f7d7</guid>
+		<pubDate>Thu, 25 Jun 2020 14:22:00 +0000</pubDate>
+	</item>
+	<item>
+		<title>Release_notes-4.3.pdf</title>
+		<link>http://www.iddero.com/files/Release_notes-4.3.pdf</link>
+		<guid isPermaLink="false">90ca45ee362ed51de3914c37f952c643d26d8f5ada279fe5c6dbd5cd49b0adba</guid>
+		<pubDate>Thu, 25 Jun 2020 14:18:40 +0000</pubDate>
+	</item>
+	<item>
 		<title>HC3L-KNX_Datasheet_es.pdf</title>
 		<link>http://www.iddero.com/files/HC3L-KNX_Datasheet_es.pdf</link>
 		<guid isPermaLink="false">49d4eef70669ec6d8b240bb50e6f1b3d6025cec289ec6ea92b84c97a3895b958</guid>
